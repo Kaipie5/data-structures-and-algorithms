@@ -26,6 +26,7 @@ const grandTotal = (stores) => {
     let grandTotalArray = []
   for (let i = 0; i < hoursOpen.length; i++) {
       let sum = 0;
+      console.log(stores[i])
     for (let j = 0; j < stores.length; j++) {
         sum = sum + stores[j][i]
     }
@@ -34,6 +35,19 @@ const grandTotal = (stores) => {
   return grandTotalArray;
 
 };
+
+// const grandTotal = (stores) => {
+//     let results = [];
+//     for (let i = 0; i < stores.length; i++) {
+//       let sum = 0;
+//       console.log(stores[i].length)
+//       for (let j = 0; j < stores[i].length; j++) {
+//         sum = sum + stores[i][j]
+//       }
+//       results.push(sum)
+//     }
+//     return results;
+//   };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
